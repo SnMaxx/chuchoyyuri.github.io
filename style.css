@@ -10,11 +10,10 @@ body {
 
 #book {
     position: relative;
-    width: 800px; /* Adjust the size of the book */
-    height: 600px; /* Adjust the size of the book */
-    background: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    height: 600px;
     perspective: 1000px;
+    overflow: hidden;
 }
 
 .peel-top, .peel-back, .peel-bottom {
@@ -23,31 +22,23 @@ body {
     height: 100%;
     backface-visibility: hidden;
     transform-origin: right;
+    transition: transform 0.8s ease-in-out;
 }
 
 .peel-top {
     z-index: 3;
+    background: #fff;
     transform: rotateY(0deg);
 }
 
 .peel-back {
     z-index: 2;
-    transform: rotateY(-180deg);
     background: #f0f0f0;
+    transform: rotateY(-180deg);
 }
 
 .peel-bottom {
     z-index: 1;
-    transform: rotateY(-360deg);
     background: #e0e0e0;
-}
-
-.link-overlay {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    width: 40%;
-    height: 10%;
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.01);
+    transform: rotateY(-360deg);
 }
