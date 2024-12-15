@@ -13,6 +13,7 @@ body {
     width: 80%;
     height: 80%;
     position: relative;
+    overflow: hidden;
 }
 
 .page {
@@ -20,8 +21,15 @@ body {
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-    transform-origin: right;
+    transform-origin: left;
     transition: transform 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page.hidden {
+    display: none;
 }
 
 .page video, .page img {
@@ -38,4 +46,6 @@ body {
     height: 10%;
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.01); /* Área transparente clickable */
+}
+
 }
