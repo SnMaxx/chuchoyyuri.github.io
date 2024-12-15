@@ -1,3 +1,4 @@
+// Initialize Peel.js
 var p = new Peel('#book');
 p.setMode('book');
 p.handleDrag(function(evt, x, y) {
