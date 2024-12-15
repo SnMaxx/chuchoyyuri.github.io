@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation Flipbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flipbook-container">
+        <!-- Portada animada -->
+        <div class="page">
+            <video autoplay loop muted>
+                <source src="Media/Portada.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+
+        <!-- Página 2 con link overlay -->
+        <div class="page">
+            <img src="Media/Page_2.jpg" alt="Page 2">
+            <a href="https://maps.app.goo.gl/yJmEPtwnJW49c5iv8" class="link-overlay" target="_blank"></a>
+        </div>
+
+        <!-- Página 3 -->
+        <div class="page">
+            <img src="Media/Page_3.jpg" alt="Page 3">
+        </div>
+
+        <!-- Página 4 -->
+        <div class="page">
+            <img src="Media/Page_4.jpg" alt="Page 4">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
