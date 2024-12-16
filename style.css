@@ -12,8 +12,9 @@ body {
     position: relative;
     width: 800px;
     height: 600px;
-    perspective: 1000px; /* Añade profundidad para el efecto de pelado */
+    perspective: 1000px;
     overflow: hidden;
+    transform-style: preserve-3d; /* Enable 3D effect for flipbook */
 }
 
 .peel-top,
@@ -24,14 +25,17 @@ body {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    transform-origin: right; /* Importante para el efecto de pelado */
-    transition: transform 0.8s ease-in-out; /* Añade una transición suave */
+    transform-origin: right;
+    transition: transform 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Estilos para las capas */
 .peel-top {
     z-index: 4;
     background-color: #fff;
+    transform: rotateY(0deg);
 }
 
 .peel-back {
@@ -52,7 +56,6 @@ body {
     transform: rotateY(-540deg);
 }
 
-/* Estilo del enlace */
 .link-overlay {
     position: absolute;
     top: 50%;
