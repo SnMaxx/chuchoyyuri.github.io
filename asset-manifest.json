@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/chuchoyyuri.github.io/static/css/main.a0ff625d.css",
+    "main.js": "/chuchoyyuri.github.io/static/js/main.21979839.js",
+    "static/js/563.5ddbeff0.chunk.js": "/chuchoyyuri.github.io/static/js/563.5ddbeff0.chunk.js",
+    "static/media/Portada.mp4": "/chuchoyyuri.github.io/static/media/Portada.3227a1dab2b53e626f50.mp4",
+    "static/media/Page_2.jpg": "/chuchoyyuri.github.io/static/media/Page_2.ba796181c2f07a1f2130.jpg",
+    "static/media/Page_4.jpg": "/chuchoyyuri.github.io/static/media/Page_4.30b4ca6402e0a9486eb3.jpg",
+    "static/media/Page_3.jpg": "/chuchoyyuri.github.io/static/media/Page_3.eacfe90196ecf39fb61f.jpg",
+    "index.html": "/chuchoyyuri.github.io/index.html",
+    "main.a0ff625d.css.map": "/chuchoyyuri.github.io/static/css/main.a0ff625d.css.map",
+    "main.21979839.js.map": "/chuchoyyuri.github.io/static/js/main.21979839.js.map",
+    "563.5ddbeff0.chunk.js.map": "/chuchoyyuri.github.io/static/js/563.5ddbeff0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0ff625d.css",
+    "static/js/main.21979839.js"
+  ]
+}
