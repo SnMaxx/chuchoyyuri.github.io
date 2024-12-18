@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+/* Celulares */
+@media (min-width: 320px) and (max-width: 480px) {
+  .book {
+    min-width: 320px;
+    max-width: 480px;
+    min-height: 480px;
+    max-height: 800px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .book {
+    min-width: 481px;
+    max-width: 1024px;
+    min-height: 800px;
+    max-height: 1200px;
+  }
+}
+
+/* PC / Escritorio */
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .book {
+    min-width: 1025px;
+    max-width: 1920px;
+    min-height: 720px;
+    max-height: 1080px;
+  }
+}
+
+/* Imágenes en Celulares */
+@media (max-width: 480px) {
+  img,
+  .altura-max {
+    width: 100%; /* Mantener el ancho completo */
+    max-height: 75vh; /* Máximo 70% de la altura del viewport */
+    object-fit: cover;
+  }
+}
+
+/* Imágenes en Tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+  img,
+  .altura-max {
+    width: 100%;
+    max-height: 85vh;
+    object-fit: cover;
+  }
+}
+
+/* Imágenes en PC/Escritorio */
+@media (min-width: 1025px) {
+  img,
+  .altura-max {
+    width: 100%;
+    max-height: 95vh;
+    object-fit: cover;
+  }
+}
+
+.video-container {
+  width: 100%;
+  object-fit: cover; /* Ajusta el video sin distorsionarlo */
+}
